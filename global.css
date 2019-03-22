@@ -1,0 +1,31 @@
+html, body {
+   margin: 0;
+   padding: 0;
+}
+body > * {
+   box-sizing: border-box;
+}
+img {
+   width: 100%;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+section .column {
+    width: 50%;
+}
+section .img-wrapper {
+    padding: 5px 5px 0;
+}
+@media (min-width: 500px) {
+    section .column {
+        width: 33.33%;
+    }
+}
+@media (min-width: 900px) {
+    section .column {
+        width: 25%;
+    }
+}
